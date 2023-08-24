@@ -5,21 +5,23 @@ from pathlib import Path
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
-
 NAME = 'eip712-structs'
-VERSION = '1.1.0'
+VERSION = '1.2.0'
 
 install_requirements = [
-    'eth-utils>=1.4.0',
-    'pysha3>=1.0.2',
+    'eth-utils>=2.1.0',
 ]
 
 test_requirements = [
     'coveralls==1.8.0',
-    'pytest==4.6.2',
-    'pytest-cov==2.7.1',
-    'web3==4.9.2',
+    'pytest==6.2.5',
+    'pytest-cov==4.1.0',
+    'web3==6.4.0',
 ]
+
+EXTRAS = {
+    "dev": test_requirements
+}
 
 
 def get_file_text(filename):
@@ -69,7 +71,7 @@ setup(
     author='AJ Grubbs',
     packages=find_packages(),
     install_requires=install_requirements,
-    tests_require=test_requirements,
+    extras_require=EXTRAS,
     cmdclass={
         "test": PyTest,
         "coveralls": CoverallsCommand,

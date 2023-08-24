@@ -9,8 +9,9 @@ Read the proposal:<br/>
 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md
 
 #### Supported Python Versions
-- `3.6`
-- `3.7`
+- `3.9`
+- `3.10`
+- `3.11`
 
 ## Install
 ```bash
