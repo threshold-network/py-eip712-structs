@@ -212,3 +212,10 @@ Deploying a new version:
 
 ## Shameless Plug
 Written by [ConsenSys](https://consensys.net) for the world! :heart:
+
+## Historical Note
+
+Maintenance of this project was taken over by Threhsold Network in August 2023.
+
+Five years prior, in August 2018, NuCypher, which later joined Threhsold Network, launched a gitcoin bounty for the adoption and implementation of EIP-712 with help from Scott Moore and Piper Merriam, and became the first project to use an EIP-712 implementation in production. So it is a proud full-circle moment that we bring this project back under our umbrella and make it compatible with current versions of Python.
+
